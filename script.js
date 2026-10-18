@@ -87,5 +87,52 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     facade.addEventListener('click', handlePlayVideo);
   }
+
+  // 5. Controle do Menu Móvel (Hamburger)
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  if (mobileMenuBtn && navLinks) {
+    const toggleMenu = (isOpen) => {
+      const open = typeof isOpen === 'boolean' ? isOpen : !navLinks.classList.contains('is-open');
+      navLinks.classList.toggle('is-open', open);
+      mobileMenuBtn.classList.toggle('is-open', open);
+      mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    mobileMenuBtn.addEventListener('click', () => {
+      toggleMenu();
+    });
+
+    // Fechar menu ao clicar em qualquer item de navegação
+    const navItems = navLinks.querySelectorAll('.nav-link');
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        toggleMenu(false);
+      });
+    });
+
+    // Fechar menu ao clicar fora do cabeçalho
+    document.addEventListener('click', (e) => {
+      if (header && !header.contains(e.target) && navLinks.classList.contains('is-open')) {
+        toggleMenu(false);
+      }
+    });
+
+    // Fechar menu ao pressionar tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
+        toggleMenu(false);
+        mobileMenuBtn.focus();
+      }
+    });
+
+    // Fechar menu ao redimensionar para tela de desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navLinks.classList.contains('is-open')) {
+        toggleMenu(false);
+      }
+    });
+  }
 });
 
