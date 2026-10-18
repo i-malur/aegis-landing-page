@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEGIS - Segurança digital para a vida real</title>
+  <meta name="description"
+    content="O Aegis transforma informação em proteção: identifica riscos, orienta decisões e ajuda você a agir antes que um golpe aconteça.">
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Tipografia Oficial Inter via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicons e Ícones do Site -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=2">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== Cabeçalho / Navegação Fixa ==================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Aegis Página Inicial">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD46Yx5191lVpTrRCAT4Cd5zSom7Mh9J1wH1XJLGJpQnv-4up_jtcnwqCkMZLD7epUdv_PGWv5NuA_I9lD0dSqw-LwRK9i6FO244EIUS_lVCivJeQ9DwMm0xoFY02kjCaaZWcJIAkob-pGztjCa2-LoV1Eq8biWz_Ca-rOw8gLwn0C46PE72kL7Pel47sFWz6blNEQQzA73cFQ2_IZVJhh3N0j7E3Oe1OlNO43cVIn6rlP4CvN8alP4U8Zn6wsvjC-8Lg"
+          alt="Logo Aegis" class="brand-icon">
+        <span class="brand-title">AEGIS</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação Principal">
+        <a href="#cenario" class="nav-link">O problema</a>
+        <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+        <a href="#pitch" class="nav-link">Pitch</a>
+        <a href="#equipe" class="nav-link">Equipe</a>
+        <a href="#pesquisa" class="nav-link">Pesquisa</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== Conteúdo Principal ==================== -->
+  <main>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <!-- Conteúdo Textual e Botões -->
+        <div class="hero-content">
+          <div class="info-pill">
+            <span class="pulse-indicator" aria-hidden="true"></span>
+            <span>PROTEÇÃO COMEÇA COM INFORMAÇÃO</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Sua vida digital <br>
+            merece um escudo.
+          </h1>
+
+          <p class="hero-description">
+            O Aegis transforma informação em proteção: identifica riscos, orienta decisões e ajuda você a agir antes que
+            um golpe aconteça.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#funcionalidades" class="btn-primary neon-btn-glow">
+              <span>Veja o app em ação</span>
+              <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </a>
+
+            <a href="#cenario" class="btn-secondary">
+              <span>Entenda o cenário</span>
+              <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Painel Gráfico HUD Tecnológico com SVG Animado -->
+        <div class="hud-graphic-container">
+          <div class="svg-animation-wrapper">
+            <svg viewBox="0 0 600 450" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Painel cibernético interativo do Aegis">
+              <defs>
+                <radialGradient cx="50%" cy="50%" id="cyberGlow" r="60%">
+                  <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.18"></stop>
+                  <stop offset="60%" stop-color="#050b14" stop-opacity="0.8"></stop>
+                  <stop offset="100%" stop-color="#03070d" stop-opacity="0.95"></stop>
+                </radialGradient>
+
+                <linearGradient id="shieldGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#00f2fe"></stop>
+                  <stop offset="50%" stop-color="#4facfe"></stop>
+                  <stop offset="100%" stop-color="#00b4d8"></stop>
+                </linearGradient>
+
+                <linearGradient id="radarScanGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.6"></stop>
+                  <stop offset="100%" stop-color="#00f2fe" stop-opacity="0"></stop>
+                </linearGradient>
+
+                <filter height="160%" id="neonGlow" width="160%" x="-30%" y="-30%">
+                  <feGaussianBlur result="blur1" stdDeviation="6"></feGaussianBlur>
+                  <feGaussianBlur result="blur2" stdDeviation="14"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur2"></feMergeNode>
+                    <feMergeNode in="blur1"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+
+                <filter height="140%" id="subtleGlow" width="140%" x="-20%" y="-20%">
+                  <feGaussianBlur result="blur" stdDeviation="3"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <style>
+                @keyframes spinClockwise {
+                  0% {
+                    transform: rotate(0deg);
+                  }
+
+                  100% {
+                    transform: rotate(360deg);
+                  }
+                }
+
+                @keyframes spinCounter {
+                  0% {
+                    transform: rotate(360deg);
+                  }
+
+                  100% {
+                    transform: rotate(0deg);
+                  }
+                }
+
+                @keyframes pulseShield {
+
+                  0%,
+                  100% {
+                    transform: scale(1);
+                    filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.4));
+                  }
+
+                  50% {
+                    transform: scale(1.035);
+                    filter: drop-shadow(0 0 28px rgba(0, 242, 254, 0.85));
+                  }
+                }
+
+                @keyframes radarSweep {
+                  0% {
+                    transform: rotate(0deg);
+                  }
+
+                  100% {
+                    transform: rotate(360deg);
+                  }
+                }
+
+                @keyframes waveExpand {
+                  0% {
+                    r: 35px;
+                    opacity: 0.9;
+                    stroke-width: 2.5px;
+                  }
+
+                  100% {
+                    r: 175px;
+                    opacity: 0;
+                    stroke-width: 0.5px;
+                  }
+                }
+
+                @keyframes waveExpandDelay {
+                  0% {
+                    r: 35px;
+                    opacity: 0.9;
+                    stroke-width: 2.5px;
+                  }
+
+                  100% {
+                    r: 175px;
+                    opacity: 0;
+                    stroke-width: 0.5px;
+                  }
+                }
+
+                @keyframes blinkDot {
+
+                  0%,
+                  100% {
+                    opacity: 0.3;
+                  }
+
+                  50% {
+                    opacity: 1;
+                  }
+                }
+
+                @keyframes scanLineY {
+                  0% {
+                    transform: translateY(-190px);
+                    opacity: 0;
+                  }
+
+                  20% {
+                    opacity: 0.8;
+                  }
+
+                  80% {
+                    opacity: 0.8;
+                  }
+
+                  100% {
+                    transform: translateY(190px);
+                    opacity: 0;
+                  }
+                }
+
+                @keyframes particleOrbit {
+                  0% {
+                    transform: rotate(0deg) translateX(110px) rotate(0deg);
+                  }
+
+                  100% {
+                    transform: rotate(360deg) translateX(110px) rotate(-360deg);
+                  }
+                }
+
+                @keyframes particleOrbit2 {
+                  0% {
+                    transform: rotate(180deg) translateX(145px) rotate(-180deg);
+                  }
+
+                  100% {
+                    transform: rotate(-180deg) translateX(145px) rotate(180deg);
+                  }
+                }
+
+                .rot-clockwise {
+                  transform-origin: 300px 225px;
+                  animation: spinClockwise 22s linear infinite;
+                }
+
+                .rot-counter {
+                  transform-origin: 300px 225px;
+                  animation: spinCounter 16s linear infinite;
+                }
+
+                .rot-fast {
+                  transform-origin: 300px 225px;
+                  animation: spinClockwise 8s linear infinite;
+                }
+
+                .radar-rot {
+                  transform-origin: 300px 225px;
+                  animation: radarSweep 4s linear infinite;
+                }
+
+                .shield-pulse {
+                  transform-origin: 300px 225px;
+                  animation: pulseShield 3.5s ease-in-out infinite;
+                }
+
+                .wave-1 {
+                  animation: waveExpand 3s ease-out infinite;
+                }
+
+                .wave-2 {
+                  animation: waveExpandDelay 3s ease-out infinite;
+                  animation-delay: 1.5s;
+                }
+
+                .scan-beam {
+                  animation: scanLineY 3s ease-in-out infinite;
+                }
+
+                .orbit-1 {
+                  transform-origin: 300px 225px;
+                  animation: particleOrbit 7s linear infinite;
+                }
+
+                .orbit-2 {
+                  transform-origin: 300px 225px;
+                  animation: particleOrbit2 10s linear infinite;
+                }
+
+                .dot-blink {
+                  animation: blinkDot 1.8s ease-in-out infinite;
+                }
+              </style>
+
+              <!-- Fundo escuro cibernético -->
+              <rect fill="#070c14" height="450" rx="20" width="600"></rect>
+              <rect fill="url(#cyberGlow)" height="450" rx="20" width="600"></rect>
+              <rect fill="none" height="448" rx="19" stroke="#00f2fe" stroke-opacity="0.35" stroke-width="1.2"
+                width="598" x="1" y="1"></rect>
+
+              <!-- Grid overlay -->
+              <g stroke="#00f2fe" stroke-opacity="0.08" stroke-width="0.5">
+                <line x1="50" x2="50" y1="0" y2="450"></line>
+                <line x1="125" x2="125" y1="0" y2="450"></line>
+                <line x1="200" x2="200" y1="0" y2="450"></line>
+                <line x1="275" x2="275" y1="0" y2="450"></line>
+                <line x1="350" x2="350" y1="0" y2="450"></line>
+                <line x1="425" x2="425" y1="0" y2="450"></line>
+                <line x1="500" x2="500" y1="0" y2="450"></line>
+                <line x1="575" x2="575" y1="0" y2="450"></line>
+                <line x1="0" x2="600" y1="60" y2="60"></line>
+                <line x1="0" x2="600" y1="120" y2="120"></line>
+                <line x1="0" x2="600" y1="180" y2="180"></line>
+                <line x1="0" x2="600" y1="240" y2="240"></line>
+                <line x1="0" x2="600" y1="300" y2="300"></line>
+                <line x1="0" x2="600" y1="360" y2="360"></line>
+                <line x1="0" x2="600" y1="420" y2="420"></line>
+              </g>
+
+              <!-- Ondas de pulso concêntricas de sonar -->
+              <circle class="wave-1" cx="300" cy="225" fill="none" r="35" stroke="#00f2fe"></circle>
+              <circle class="wave-2" cx="300" cy="225" fill="none" r="35" stroke="#00f2fe"></circle>
+
+              <!-- Anel tecnológico externo com marcas de calibração -->
+              <g class="rot-clockwise">
+                <circle cx="300" cy="225" fill="none" r="185" stroke="#00f2fe" stroke-dasharray="6 14"
+                  stroke-opacity="0.45" stroke-width="1.5"></circle>
+                <circle cx="300" cy="225" fill="none" filter="url(#subtleGlow)" r="172" stroke="#4facfe"
+                  stroke-dasharray="35 70" stroke-opacity="0.6" stroke-width="1"></circle>
+                <path d="M 300 35 L 300 45 M 300 405 L 300 415 M 110 225 L 120 225 M 480 225 L 490 225" stroke="#00f2fe"
+                  stroke-linecap="round" stroke-width="2.5"></path>
+              </g>
+
+              <!-- Anel secundário em contra-rotação -->
+              <g class="rot-counter">
+                <circle cx="300" cy="225" fill="none" filter="url(#subtleGlow)" r="150" stroke="#00f2fe"
+                  stroke-dasharray="14 10 2 10" stroke-opacity="0.75" stroke-width="2"></circle>
+                <circle cx="300" cy="225" fill="none" r="138" stroke="#3a7bd5" stroke-dasharray="60 30"
+                  stroke-opacity="0.5" stroke-width="1"></circle>
+              </g>
+
+              <!-- Anel interno de rotação rápida -->
+              <g class="rot-fast">
+                <circle cx="300" cy="225" fill="none" filter="url(#neonGlow)" r="115" stroke="#00f2fe"
+                  stroke-dasharray="8 32" stroke-opacity="0.9" stroke-width="3"></circle>
+              </g>
+
+              <!-- Setor de Varredura Radar -->
+              <g class="radar-rot">
+                <path d="M 300 225 L 300 65 A 160 160 0 0 1 435 145 Z" fill="url(#radarScanGrad)"></path>
+                <line filter="url(#neonGlow)" stroke="#00f2fe" stroke-width="2" x1="300" x2="300" y1="225" y2="65">
+                </line>
+              </g>
+
+              <!-- Partículas em Órbita -->
+              <g class="orbit-1">
+                <circle cx="300" cy="225" fill="#00f2fe" filter="url(#neonGlow)" r="4.5"></circle>
+              </g>
+              <g class="orbit-2">
+                <circle cx="300" cy="225" fill="#ffd166" filter="url(#neonGlow)" r="3.5"></circle>
+              </g>
+
+              <!-- Feixe de Scan Vertical -->
+              <g>
+                <line class="scan-beam" filter="url(#neonGlow)" stroke="#00f2fe" stroke-opacity="0.8" stroke-width="2.5"
+                  x1="160" x2="440" y1="225" y2="225"></line>
+              </g>
+
+              <!-- Escudo AEGIS Central Holográfico com Cadeado e Relâmpago -->
+              <g class="shield-pulse">
+                <path d="M 300 135 L 360 160 C 360 235 330 285 300 310 C 270 285 240 235 240 160 Z" fill="#00f2fe"
+                  fill-opacity="0.12" filter="url(#neonGlow)"></path>
+                <path d="M 300 135 L 360 160 C 360 235 330 285 300 310 C 270 285 240 235 240 160 Z" fill="#071220"
+                  filter="url(#neonGlow)" stroke="url(#shieldGrad)" stroke-linejoin="round" stroke-width="3.5"></path>
+                <path d="M 300 148 L 348 168 C 348 228 324 270 300 292 C 276 270 252 228 252 168 Z" fill="none"
+                  stroke="#00f2fe" stroke-dasharray="4 4" stroke-opacity="0.55" stroke-width="1.2"></path>
+
+                <!-- Haste do Cadeado -->
+                <path d="M 286 210 L 286 195 C 286 186.5 292 180 300 180 C 308 180 314 186.5 314 195 L 314 210"
+                  fill="none" filter="url(#subtleGlow)" stroke="#ffffff" stroke-linecap="round" stroke-width="3.5">
+                </path>
+                <!-- Corpo do Cadeado -->
+                <rect fill="#f7b731" filter="url(#subtleGlow)" height="32" rx="5" stroke="#e1a120" stroke-width="1.5"
+                  width="38" x="281" y="208"></rect>
+                <!-- Relâmpago -->
+                <path d="M 302 214 L 294 225 L 301 225 L 297 236 L 307 223 L 300 223 Z" fill="#111827"></path>
+                <!-- Padrão Grego Minimalista -->
+                <path d="M 275 258 H 325 M 283 263 H 317" stroke="#00f2fe" stroke-linecap="round" stroke-opacity="0.7"
+                  stroke-width="1.5"></path>
+              </g>
+
+              <!-- Telemetrias e Rótulos HUD -->
+              <g class="dot-blink" transform="translate(30, 36)">
+                <circle cx="6" cy="6" fill="#00f2fe" filter="url(#subtleGlow)" r="4"></circle>
+                <text fill="#00f2fe" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11"
+                  font-weight="700" letter-spacing="1.5" x="18" y="10">AEGIS THREAT SHIELD // ACTIVE</text>
+              </g>
+
+              <g transform="translate(30, 60)">
+                <text fill="#64748b" font-family="monospace" font-size="10" x="0" y="0">STATUS: PROTEÇÃO EM TEMPO
+                  REAL</text>
+                <text fill="#64748b" font-family="monospace" font-size="10" x="0" y="14">FIREWALL: CAMADA 7
+                  INTEGRADA</text>
+              </g>
+
+              <g transform="translate(435, 36)">
+                <text fill="#00f2fe" font-family="monospace" font-size="11" font-weight="bold" text-anchor="end" x="135"
+                  y="10">SCAN: 99.98% OK</text>
+                <text fill="#64748b" font-family="monospace" font-size="10" text-anchor="end" x="135"
+                  y="26">INTEGRIDADE: ALTA</text>
+                <rect fill="#1e293b" height="3" rx="1.5" width="100" x="35" y="34"></rect>
+                <rect fill="#00f2fe" filter="url(#subtleGlow)" height="3" rx="1.5" width="88" x="35" y="34"></rect>
+              </g>
+
+              <g transform="translate(30, 400)">
+                <rect fill="#0f172a" fill-opacity="0.75" height="26" rx="6" stroke="#00f2fe" stroke-opacity="0.3"
+                  stroke-width="1" width="150" x="0" y="0"></rect>
+                <circle cx="14" cy="13" fill="#10b981" r="3.5"></circle>
+                <text fill="#e2e8f0" font-family="'Space Grotesk', system-ui, sans-serif" font-size="10"
+                  font-weight="600" x="26" y="17">ZERO VULNERABILIDADES</text>
+              </g>
+
+              <g transform="translate(420, 400)">
+                <text fill="#00f2fe" font-family="monospace" font-size="10" text-anchor="end" x="150" y="17">AI GUARDIAN
+                  v2.4 • RUNNING</text>
+              </g>
+
+              <!-- Cantos cibernéticos -->
+              <path d="M 12 30 L 12 12 L 30 12" fill="none" stroke="#00f2fe" stroke-linecap="round" stroke-width="2">
+              </path>
+              <path d="M 588 30 L 588 12 L 570 12" fill="none" stroke="#00f2fe" stroke-linecap="round" stroke-width="2">
+              </path>
+              <path d="M 12 420 L 12 438 L 30 438" fill="none" stroke="#00f2fe" stroke-linecap="round" stroke-width="2">
+              </path>
+              <path d="M 588 420 L 588 438 L 570 438" fill="none" stroke="#00f2fe" stroke-linecap="round"
+                stroke-width="2"></path>
+            </svg>
+          </div>
+
+          <!-- Card de Alerta Flutuante Refinado com Status Ativo e Protegido -->
+          <div class="floating-threat-card">
+            <div class="threat-card-left">
+              <div class="threat-card-icon" aria-hidden="true">
+                <span class="threat-pulse-dot" aria-hidden="true"></span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="threat-card-info">
+                <div class="threat-title-row">
+                  <h4 class="threat-card-title">Ameaças em constante evolução</h4>
+                  <span class="threat-tag-active">Ativo</span>
+                </div>
+                <p class="threat-card-desc">Aegis ajuda a reconhecer sinais antes que se tornem prejuízo.</p>
+              </div>
+            </div>
+
+            <div class="threat-status-badge">
+              <span class="threat-status-dot" aria-hidden="true"></span>
+              <span class="threat-status-text">PROTEGIDO</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. Seção: O Cenário Brasileiro -->
+    <section class="section" id="cenario" aria-labelledby="cenario-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">O CENÁRIO BRASILEIRO</span>
+          <h2 id="cenario-title" class="section-title">Golpes digitais não são exceção. São uma rotina.</h2>
+          <p class="section-subtitle">
+            Fraudes mais sofisticadas, inteligência artificial e canais cotidianos tornam a prevenção uma necessidade
+            urgente. O Aegis foi criado para devolver clareza e segurança às pessoas.
+          </p>
+        </div>
+
+        <!-- Grade de 2 Colunas com Estatísticas -->
+        <div class="data-cards-grid">
+
+          <!-- Card 1: Volume Anual -->
+          <div class="stats-card">
+            <div>
+              <span class="card-label cyan">VOLUME ANUAL</span>
+              <h3 class="card-title">Tentativas de golpes digitais</h3>
+            </div>
+
+            <div class="progress-list">
+              <!-- Item 1 -->
+              <div>
+                <div class="progress-header">
+                  <span>Telefones e mensagens instantâneas</span>
+                  <span>71%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill" style="width: 71%;" data-target-width="71%"></div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div>
+                <div class="progress-header">
+                  <span>WhatsApp</span>
+                  <span>64%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill" style="width: 64%;" data-target-width="64%"></div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div>
+                <div class="progress-header">
+                  <span>Gmail</span>
+                  <span>32%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill" style="width: 32%;" data-target-width="32%"></div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div>
+                <div class="progress-header">
+                  <span>Instagram</span>
+                  <span>22%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill" style="width: 22%;" data-target-width="22%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Impacto Financeiro e Donut Chart -->
+          <div class="stats-card">
+            <div>
+              <span class="card-label pink">IMPACTO FINANCEIRO</span>
+              <h3 class="card-title">Perdas causadas por fraudes</h3>
+            </div>
+
+            <div class="donut-chart-container">
+              <div class="donut-chart-wrapper">
+                <div class="donut-chart">
+                  <div class="donut-center">
+                    <span class="donut-percentage">81%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="donut-legend">
+                <div class="legend-item">
+                  <span class="legend-dot cyan" aria-hidden="true"></span>
+                  <span><strong>81%</strong> dos adultos tiveram contato com uma tentativa de golpe.</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot blue" aria-hidden="true"></span>
+                  <span><strong>53%</strong> chegaram a interagir com os criminosos.</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-dot red" aria-hidden="true"></span>
+                  <span><strong>25%</strong> dos que interagiram perderam dinheiro ou dados.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Grade de 3 Métricas de Impacto em Destaque -->
+        <div class="impact-metrics-grid">
+          <div class="metric-card">
+            <span class="metric-value cyan">34,5 bi</span>
+            <p class="metric-description">
+              tentativas de golpes digitais registradas no Brasil em 12 meses.
+            </p>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-value purple">R$ 21,2 bi</span>
+            <p class="metric-description">
+              em perdas financeiras causadas por fraudes digitais.
+            </p>
+          </div>
+
+          <div class="metric-card">
+            <span class="metric-value amber">16,5 mi</span>
+            <p class="metric-description">
+              de brasileiros perderam dinheiro para golpes.
+            </p>
+          </div>
+        </div>
+
+        <p class="data-attribution">
+          Dados: estudo GASA, Relatório de Tendências de Fraude 2026 da TransUnion, Serasa Experian e Ministério das
+          Mulheres.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 3. Seção: Funcionalidades -->
+    <section class="section" id="funcionalidades" aria-labelledby="funcionalidades-title">
+      <div class="container features-grid">
+
+        <!-- Mockup Celular com QR Code Oficial -->
+        <div>
+          <div class="phone-mockup-card hud-glow">
+            <div class="phone-badge">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect height="16" rx="2" width="16" x="4" y="4"></rect>
+                <rect height="4" width="4" x="7" y="7"></rect>
+                <rect height="4" width="4" x="13" y="7"></rect>
+                <rect height="4" width="4" x="7" y="13"></rect>
+                <rect height="2" width="2" x="13" y="13"></rect>
+                <rect height="2" width="2" x="15" y="15"></rect>
+              </svg>
+              <span>ACESSE PELO CELULAR</span>
+            </div>
+
+            <h3 class="phone-card-title">Escaneie para testar o Aegis</h3>
+
+            <p class="phone-card-desc">
+              Aponte a câmera do seu celular para o QR Code e experimente a aplicação em tempo real.
+            </p>
+
+            <div class="qr-code-box">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGjb5ol2v4aq9xk6lvYPrDiaTTA5lghL-VAipOTupQxHnPIj-sTNEK9OO5Q4kz7VVZTIP_2R1T-oID3htKpauwyoCWYKzmBY36XZMi-eNgqWI0flp8zOd1erPHoXu9jDpweWNnnedgIyTzQMPt313Rk8FUH3URmOlnzUYJ8yjMSiPfzvO8KSO7dfgrtNHSbvsP0ICfL7S2M2hk9ZcxY2uKnMYiphT_PN9sguLqFtHikBs-0UCesXj5MmpOCyHtzi2aRQ"
+                alt="QR Code para acessar o aplicativo Aegis no celular" class="qr-code-img">
+            </div>
+
+            <div class="phone-actions">
+              <a href="https://aegis-app-fwtf.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="btn-primary" style="width: 100%;">
+                <span>Acessar aplicativo</span>
+                <span>↗</span>
+              </a>
+              <a href="https://aegis-app-fwtf.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="app-url-link">
+                aegis-app-fwtf.onrender.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilares de Benefícios do Aegis -->
+        <div class="features-pillars-wrapper">
+          <div>
+            <span class="section-tag">COMO O AEGIS AJUDA</span>
+            <h2 id="funcionalidades-title" class="section-title">
+              Prevenção, checagem e acolhimento em um só lugar.
+            </h2>
+          </div>
+
+          <div class="features-list">
+            <!-- Pilar 1 -->
+            <div class="feature-item">
+              <div class="feature-icon-box" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M12 4v1m6 11h2m-6 0a2 2 0 100-4 2 2 0 000 4zm-8-3a2 2 0 104 0 2 2 0 00-4 0zm0 0H4m16 4v1m-6-1V9a2 2 0 00-2-2H6a2 2 0 00-2 2v10m16 0a2 2 0 01-2 2H6a2 2 0 01-2-2m16 0V9a2 2 0 00-2-2h-3"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <p class="feature-text">
+                Analise links, arquivos, SMS e e-mails suspeitos antes de clicar.
+              </p>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="feature-item">
+              <div class="feature-icon-box" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <p class="feature-text">
+                Receba alertas sobre novos golpes, riscos e chamadas potencialmente maliciosas.
+              </p>
+            </div>
+
+            <!-- Pilar 3 -->
+            <div class="feature-item">
+              <div class="feature-icon-box" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <p class="feature-text">
+                Conte com orientação após um golpe, incluindo caminhos para denúncias e suporte.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Seção: Pitch do Projeto (Vídeo) -->
+    <section class="section" id="pitch" aria-labelledby="pitch-title">
+      <div class="container">
+        <div class="section-header"
+          style="text-align: center; max-width: 48rem; margin-left: auto; margin-right: auto; margin-bottom: 2.5rem;">
+          <span class="section-tag">APRESENTAÇÃO OFICIAL</span>
+          <h2 id="pitch-title" class="section-title">Conheça o Pitch do Aegis</h2>
+          <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+            Assista à nossa apresentação detalhando o problema, a proposta de valor, a tecnologia e o impacto da solução
+            para o Supernova 2026.
+          </p>
+        </div>
+
+        <div class="pitch-video-wrapper">
+          <div class="pitch-video-container hud-glow" id="pitch-player-container">
+            <!-- Capa do Vídeo Interativa (Facade de Alta Performance) -->
+            <div class="pitch-video-facade" id="pitch-facade">
+              <img src="https://i.ytimg.com/vi/nBtQD_mQxIc/hqdefault.jpg" alt="Apresentação Oficial Pitch Aegis"
+                class="pitch-facade-thumb">
+              <div class="pitch-facade-overlay"></div>
+              <button type="button" class="pitch-play-btn" id="pitch-play-btn" aria-label="Reproduzir Pitch do Aegis">
+                <div class="pitch-play-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+                <span class="pitch-play-pulse"></span>
+              </button>
+              <div class="pitch-facade-info">
+                <span class="pitch-facade-badge">Supernova 2026</span>
+                <span class="pitch-facade-title">VÍDEO PITCH AEGIS — EQUIPE HELLO GIRLS</span>
+              </div>
+            </div>
+            <!-- Player Incorporado do YouTube -->
+            <iframe id="pitch-iframe" class="pitch-video-iframe" src=""
+              data-src="https://www.youtube.com/embed/nBtQD_mQxIc?autoplay=1&amp;rel=0&amp;enablejsapi=1"
+              title="Pitch de Apresentação do Projeto Aegis" referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen style="display: none;">
+            </iframe>
+          </div>
+          <div class="pitch-video-fallback">
+            <a href="https://www.youtube.com/watch?v=nBtQD_mQxIc&amp;t=16s" target="_blank" rel="noopener noreferrer"
+              class="pitch-youtube-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+              <span>Assistir apresentação completa no YouTube</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Seção: Equipe Matrix e Parcerias -->
+    <section class="section" id="equipe" aria-labelledby="equipe-title">
+      <div class="container">
+
+        <!-- Badges Institucionais -->
+        <div class="partnerships-row">
+          <!-- Supernova 2026 -->
+          <a href="https://www.sebraesupernova.com.br/" target="_blank" rel="noopener noreferrer" class="partner-card">
+            <div class="partner-img-wrapper">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHYCxVjeTLXgtXTRFwlM5-a-93-Otgk2nr_usto3Y_fo6kfrXQjfb9BpR0P2rwKx4FqaBU1PSVC_Szw6ABbD8G07GIdOJOYY3JjOf1EIV8B40iuwqxNAL-DluhOH8-QGb-Uk_WKNatfnV25phslo0B_KmLET4NXEsIE7omunLacNx3X2zKVJ3Yues66CJqUYqyPeq6k5LV4giOtyK9Qc7tFaWqZEvapryTkp7dhisc31A1xBzki-KyfdkEg4WThYswFQ"
+                alt="Sebrae Supernova" style="height: 100%; width: auto; object-fit: contain;">
+            </div>
+            <div>
+              <span class="partner-tag cyan">PROJETO</span>
+              <span class="partner-name">Supernova 2026</span>
+            </div>
+          </a>
+
+          <!-- Fatec Zona Sul -->
+          <div class="partner-card">
+            <div class="partner-fatec-badge">
+              <span class="fatec-title">Fatec</span>
+              <span class="fatec-subtitle">Zona Sul</span>
+            </div>
+            <div>
+              <span class="partner-tag purple">INSTITUIÇÃO</span>
+              <span class="partner-name">Fatec Zona Sul</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Descrição da Equipe e Integrantes -->
+        <div class="team-layout-grid">
+          <div class="team-info-col">
+            <span class="section-tag">QUEM ESTÁ POR TRÁS?</span>
+            <h2 id="equipe-title" class="section-title">Equipe Matrix</h2>
+            <p class="team-desc">
+              Este projeto está sendo desenvolvido para o Supernova 2026, iniciativa que inspira soluções inovadoras
+              para desafios reais.
+            </p>
+            <p class="team-advisor">
+              Orientação: <a href="https://www.linkedin.com/in/stephanymartins2611/" target="_blank"
+                rel="noopener noreferrer" class="advisor-link">professora Stephany Martins</a>
+            </p>
+          </div>
+
+          <!-- Fotos e Perfis dos Integrantes -->
+          <div class="members-list">
+            <!-- Maria Luiza -->
+            <a href="https://www.linkedin.com/in/marialuiza21/" target="_blank" rel="noopener noreferrer"
+              class="member-profile-link">
+              <div class="avatar-ring cyan-blue">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvtnarLnJBI0yGO8-ErLcOvAL14hdE8ur6dFk31lqn7o3GmSlNsh9yKgDfGfBqSQfGPDaMHg7byXUpqBiCq8UzJE7Uo8uQLN2Vh3SS9ITInZoFb7YZWHo1y9v4y3wT-2QL4KwjYL0K7eGL-l0ksY16dCPAFbJsXuTofedkdyvna0xR6g5bQbwKe2NHPMOCmw_S3HqDNJOB5wfzUEcBLr3PjpqDag6mFrMFl1pvm3EVyC5J9E6mr1MS5H3vlykE538cPw"
+                  alt="Foto de perfil de Maria Luiza" class="avatar-img">
+              </div>
+              <span class="member-name">Maria Luiza</span>
+            </a>
+
+            <!-- Melanie Joyce -->
+            <a href="https://www.linkedin.com/in/melanie-bezerra/" target="_blank" rel="noopener noreferrer"
+              class="member-profile-link">
+              <div class="avatar-ring purple-pink">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_URhMvtdUHXcHmWyHFK4y_QUI5JGqO4gCZaNx_Dh6jO4hp0WaWWbbYdVChvCTICJcMQU10_MeeEWF_PZPe3g_em5Y-7Os-Ewhm5a6fIA_e7nrc76P2uQwI2mD6LiVOQa4_zORmT_OfpnoizG-EN1VbiZm-J3ApZ_NWWFLffQ--M2meC0_Tdde3UfvzLFaYOkO9DNjTBIi3RWyYVOVQKbmQ1QVz0fcG6qOu-y2PdormUXkhygCFMUqNb9l8bPMYNwoPg"
+                  alt="Foto de perfil de Melanie Joyce" class="avatar-img">
+              </div>
+              <span class="member-name">Melanie Joyce</span>
+            </a>
+
+            <!-- Matheus Costa -->
+            <a href="https://www.linkedin.com/in/matheuscoosta/" target="_blank" rel="noopener noreferrer"
+              class="member-profile-link">
+              <div class="avatar-ring blue-cyan">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxKiPLLa5xRNMiHupkL70ELhk5U3IH9bnIp-Nl5eJra6P5BIw9ngtZDio6tDLewBIjxSrCWaha32qJXWL4Kr-fBuUB-p7wx3Sshwpc5AWjzelCMev_Zroky6SwBS8pl_DxvTxC_DMIUhMsTOVj2t61EORHPqnNJPqxuzD5upVoAJU5IfK8okd-JxjUQo3bn-i33ZC6nilKkCa79WJrxWjD6k2A2EpU-gYWFnyHEcxe2XB1J5hQ1OBeQHhtz73CDGPeYg"
+                  alt="Foto de perfil de Matheus Costa" class="avatar-img">
+              </div>
+              <span class="member-name">Matheus Costa</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Banner Amarelo Vibrante de Conversão -->
+        <div class="yellow-callout-banner">
+          <div class="yellow-banner-content">
+            <span class="yellow-banner-tag">NÃO ESPERE O PRÓXIMO GOLPE</span>
+            <h2 class="yellow-banner-title">Segurança digital também é cuidado com você.</h2>
+            <p class="yellow-banner-desc">
+              Conheça uma nova forma de navegar, conversar e decidir com mais confiança.
+            </p>
+            <div>
+              <a href="https://aegis-app-fwtf.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="yellow-banner-btn">
+                <span>Conhecer o aplicativo</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Seção: Pesquisa de Campo -->
+    <section class="section" id="pesquisa" aria-labelledby="pesquisa-title">
+      <div class="container">
+        <div class="research-card hud-glow">
+          <div class="research-grid">
+            <div class="research-content">
+              <div class="research-pill">
+                <span class="pulse-indicator" aria-hidden="true"></span>
+                <span>PESQUISA DE CAMPO // CONTRIBUA COM O AEGIS</span>
+              </div>
+
+              <h2 id="pesquisa-title" class="research-title">
+                Sua experiência molda a nossa segurança.
+              </h2>
+
+              <p class="research-desc">
+                Estamos realizando uma pesquisa de campo para mapear hábitos, percepções e desafios reais sobre golpes e
+                segurança digital. Participe e ajude a construir soluções mais assertivas e acessíveis para todos.
+              </p>
+
+              <div class="research-features">
+                <div class="research-feature-chip">
+                  <svg class="research-feature-icon cyan" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span>Leva menos de 3 minutos</span>
+                </div>
+
+                <div class="research-feature-chip">
+                  <svg class="research-feature-icon emerald" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <rect height="11" rx="2" ry="2" width="18" x="3" y="11"></rect>
+                    <path d="M7 11V7a5 5 0 0110 0v4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span>100% anônimo e seguro</span>
+                </div>
+
+                <div class="research-feature-chip">
+                  <svg class="research-feature-icon purple" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span>Impacto direto no desenvolvimento</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-action-col">
+              <a href="https://forms.gle/8yGMNmhqCBVBviBv7" target="_blank" rel="noopener noreferrer"
+                class="btn-primary neon-btn-glow research-btn">
+                <span>Responder à pesquisa de campo</span>
+                <span>↗</span>
+              </a>
+              <span class="research-note">Google Forms • Rápido, Seguro &amp; Anônimo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Seção: Feedback -->
+    <section class="feedback-section" id="feedback" aria-labelledby="feedback-title">
+      <div class="container">
+        <div class="feedback-card">
+          <div class="feedback-content">
+            <span class="feedback-tag">SUA OPINIÃO IMPORTA</span>
+            <h3 id="feedback-title" class="feedback-title">Ajude a evoluir o Aegis.</h3>
+            <p class="feedback-desc">
+              Teste a experiência e conte o que podemos melhorar para tornar a segurança digital mais acessível.
+            </p>
+          </div>
+
+          <a href="https://forms.gle/UyhfqJiavTVi6WkS7" target="_blank" rel="noopener noreferrer"
+            class="btn-primary neon-btn-glow" style="flex-shrink: 0;">
+            <span>Dar feedback</span>
+            <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== Rodapé Principal ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="brand-logo">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD46Yx5191lVpTrRCAT4Cd5zSom7Mh9J1wH1XJLGJpQnv-4up_jtcnwqCkMZLD7epUdv_PGWv5NuA_I9lD0dSqw-LwRK9i6FO244EIUS_lVCivJeQ9DwMm0xoFY02kjCaaZWcJIAkob-pGztjCa2-LoV1Eq8biWz_Ca-rOw8gLwn0C46PE72kL7Pel47sFWz6blNEQQzA73cFQ2_IZVJhh3N0j7E3Oe1OlNO43cVIn6rlP4CvN8alP4U8Zn6wsvjC-8Lg"
+          alt="Logo Aegis" class="brand-icon">
+        <span class="brand-title">AEGIS</span>
+      </div>
+
+      <span class="footer-slogan">Segurança digital para a vida real.</span>
+    </div>
+  </footer>
+
+  <!-- Script Interativo -->
+  <script src="script.js"></script>
+</body>
+
+</html>
